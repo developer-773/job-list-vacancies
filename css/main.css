@@ -92,6 +92,14 @@ section{
     border-radius: 5px;
 }
 
+.job-item:nth-child(1){
+    border-left: 5px solid #5CA5A5;
+}
+
+.job-item:nth-child(2){
+    border-left: 5px solid #5CA5A5;
+}
+
 .job-item::before{
     width: 88px;
     height: 88px;
