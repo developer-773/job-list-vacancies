@@ -1,0 +1,239 @@
+:root {
+    --section-bgcolor: #f2f2f2;
+    --main-font-family: "Spartan","Arial",sans-serif;
+    --font-size-medium:500;
+    --font-size-bold:700;
+    --text-bg-color: #5CA5A5;
+    --text-title-color: #2B3939;
+}
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),url("../fonts/Spartan-Medium.woff2") format("woff2"),url("../fonts/Spartan-Medium.woff") format("woff")
+}
+@font-face {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),url("../fonts/Spartan-Bold.woff2") format("woff2"),url("../fonts/Spartan-Bold.woff") format("woff")
+}
+
+body{
+    font-family: "Spartan", "Arial", sans-serif;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+::before{
+    display: block;
+}
+
+section{
+    background-color: var(--section-bgcolor);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.top-img{
+    max-width: 100%;
+    height: 156px;
+    background-image: url("../images/Combined.svg");
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.job-list{
+    padding:76px 0
+}
+
+
+.job-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 32px 48px 32px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+}
+
+.job-item::before{
+    width: 88px;
+    height: 88px;
+    margin-right: 24px;
+    content: "";
+    background-image: url("../images/photosnap.svg");
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+
+.manage::before{
+    background-image: url("../images/manage.svg");
+}
+
+.account::before{
+    background-image: url("../images/account.svg");
+}
+
+.myhome::before{
+    background-image: url("../images/myhome.svg");
+}
+
+.loop::before{
+    background-image: url("../images/loop_studios.svg");
+}
+
+.face::before{
+    background-image: url("../images/faceit.svg");
+}
+
+.shortly::before{
+    background-image: url("../images/shortly.svg");
+}
+
+.insure::before{
+    background-image: url("../images/insure.svg");
+}
+
+.eyecam::before{
+    background-image: url("../images/eyecam.svg");
+}
+
+.air::before{
+    background-image: url("../images/air.svg");
+}
+
+.job-category-box{
+    display: inline-block;
+}
+
+small{
+    margin-right: 16px;
+    font-weight: var(--font-size-bold);
+    font-size: 14px;
+    line-height: 16px;
+    color: #5CA5A5;
+}
+
+.txt{
+    padding: 8px 8px 4px 8px;
+    font-weight: var(--font-size-bold);
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.0846154px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+.new{
+    margin-right: 8px;
+    color: #fff;
+    background-color: var(--text-bg-color);
+}
+
+.featured{
+    color: #fff;
+    background-color: var(--text-title-color);
+}
+
+.job-title{
+    margin: 0;
+    margin: 8px 0;
+    font-weight: var(--font-size-bold);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-title-color);
+    transition:  color 0.3s ease;
+}
+
+.job-title:hover{
+    color: #5CA5A5;
+    
+}
+
+.job-location{
+    display: flex;
+}
+
+.job-location-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-location-more{
+    font-weight: var(--font-size-medium);
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.115385px;
+    color: #7C8F8F;
+}
+
+.circle{
+    width: 4px;
+    height: 4px;
+    margin: 0 16px;
+    border-radius: 50%;
+    background-color: #B7C4C4;
+}
+
+.btn-box{
+    margin-left: auto;
+}
+
+.btn{
+    margin-right: 16px;
+    padding: 4px 8px;
+    font-weight: var(--font-size-bold);
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #5CA5A5;
+    background-color: #effafa;
+    border: none;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #5CA5A5;
+}
